@@ -1,0 +1,13 @@
+# GPU build — requires NVIDIA card + CUDA Toolkit 11.8 or 12.x installed
+# on the user's machine. onnxruntime-gpu does NOT bundle CUDA itself.
+
+# Runtime deps
+requests>=2.31
+Pillow>=10.0
+rembg>=2.0.50
+onnxruntime-gpu>=1.17    # GPU build of onnxruntime; conflicts with onnxruntime
+numpy>=1.24
+tkinterdnd2>=0.4.2
+
+# Build tool
+pyinstaller>=6.3
